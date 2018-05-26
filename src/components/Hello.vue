@@ -50,7 +50,7 @@
                 </div>
               </div>
             </div>
-            <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+            <button class="btn waves-effect waves-light" type="submit" name="action" @click="addUser">Submit</button>
           </form>
         </div>
       </div>
@@ -59,15 +59,34 @@
 </template>
 
 <script>
+import firebase from 'firebase';
+import { usersRef } from '../database.js';
+    
 export default {
   name: "hello",
   data() {
     return {
       msg: "Driving the Inclusive Fashion Movement",
-      brand: "Our Cool Name"
+      brand: "Our Cool Name"  
     };
-  }
+  },
+    
+    firebase: {
+            users: usersRef
+    },
+    
+    methods: {
+        addUser(){
+            var firstN = document.getElementById("first_name").value;
+            usersRef.push({firstName: firstN});
+        }
+    }
+    
 };
+    
+    
+    
+    
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>

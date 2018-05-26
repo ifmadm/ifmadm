@@ -5,7 +5,10 @@ import App from './App'
 import router from './router'
 import 'materialize-css'
 import './assets/css/materialize.css'
+import VueFire from 'vuefire'
+import firebase from 'firebase'
 
+Vue.use(VueFire);
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
