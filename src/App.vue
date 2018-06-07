@@ -1,17 +1,5 @@
 <template>
   <div id="app">
-    <!-- <header>
-      <nav>
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo center">IFMADM</a>
-          <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="*">Home</a></li>
-            <li><a href="#">My Account</a></li>
-            <li><a href="#">Link</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header> -->
     <main>
       <router-view></router-view>
     </main>
