@@ -10,7 +10,7 @@
         <section id="hero">
           <div class="container-extended">
               <h4>
-                SSSShop by your body type.
+                Shop by your body type.
                 <span>
                   Share your looks &amp; earn money.
                 </span>
