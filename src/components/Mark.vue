@@ -329,10 +329,10 @@ export default {
             var heightIN = document.getElementById("icon_prefix3").value;
             var weightV = document.getElementById("weight_name").value;
             var ageV = document.getElementById("age").value;
-            var maleY = document.getElementById("male").value;
-            var femaleY = document.getElementById("female").value;
-            var otherY = document.getElementById("other").value;
-            var influencerY = document.getElementById("indeterminate-checkbox").value;
+            var maleY = document.getElementById("male").is(':checked');
+            var femaleY = document.getElementById("female").is(':checked');
+            var otherY = document.getElementById("other").is(':checked');
+            var influencerY = document.getElementById("indeterminate-checkbox").is(':checked');
             var blogURL = document.getElementById("blog_url").value;
             usersRef.push({
                 firstName: firstN,
