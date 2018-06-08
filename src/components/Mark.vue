@@ -87,7 +87,7 @@
                     </div>
                     <div class="row">
                       <div class="input-field col s4">
-                        <input id="age" type="email" class="validate">
+                        <input id="age">
                         <label for="age">Age</label>
                       </div>
                       <div class="input-field col s8">
@@ -345,7 +345,7 @@ export default {
                 male: maleY,
                 female:femaleY,
                 other: otherY,
-                influence: influencerY,
+                influencer: influencerY,
                 blogUrl: blogURL
             });
         }
