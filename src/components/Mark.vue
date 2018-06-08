@@ -87,13 +87,13 @@
                     </div>
                     <div class="row">
                       <div class="input-field col s4">
-                        <input id="age">
+                        <input id="age" type="text" @change="ageRestricted">
                         <label for="age">Age</label>
                       </div>
                       <div class="input-field col s8">
                           <div class="col s4">
                             <label>
-                              <input type="checkbox" id="male" />
+                              <input type="checkbox" id="male" @click="ageRestricted" />
                               <span>Male</span>
                             </label>
                           </div>
@@ -113,12 +113,12 @@
                     </div>
                     <p>
                       <label>
-                        <input id="indeterminate-checkbox" type="checkbox" />
+                        <input id="indeterminate-checkbox" type="checkbox" @click="influencerChange"/>
                         <span>Are you an Influencer?</span>
                       </label>
                     </p>
                       <div class="input-field col s12">
-                        <input id="blog_url" type="text" class="validate">
+                        <input id="blog_url" type="text" class="validate" v-show="influencer">
                         <label for="blog_url">Your blog's URL</label>
                       </div>
                     <button class="btn waves-effect waves-light" type="submit" name="action" @click="addUser">Sign Up</button>
@@ -312,7 +312,8 @@ export default {
   name: "mark",
   data() {
     return {
-      brand: "Faxion X Project"
+      brand: "Faxion X Project",
+        influencer: false
     };
   },
     
@@ -348,6 +349,20 @@ export default {
                 influencer: influencerY,
                 blogUrl: blogURL
             });
+        },
+        influencerChange(){
+            if(this.influencer == false){
+                this.influencer = true;
+            }
+            else{
+                this.influencer = false;
+            }
+        },
+        ageRestricted(){
+            if(document.getElementById("age").value<18){
+                alert("You have to be at least 18 years of age to sign up");
+                document.getElementById("age").value = "";
+            }
         }
     }
 };
