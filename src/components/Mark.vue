@@ -56,8 +56,8 @@
                         <label for="first_name">First Name</label>
                       </div>
                       <div class="input-field col s6">
-                        <input id="last_name" type="text" class="validate">
-                        <label for="last_name">Email</label>
+                        <input id="email" type="text" class="validate">
+                        <label for="email">Email</label>
                       </div>
                     </div>
                     <div class="row">
@@ -76,7 +76,7 @@
                           <label for="icon_prefix2">Height</label>
                         </div>
                         <div class="input-field col s6">
-                          <textarea id="icon_prefix2" class="materialize-textarea" placeholder="in"></textarea>
+                          <textarea id="icon_prefix3" class="materialize-textarea" placeholder="in"></textarea>
                         </div>
                         
                       </div>
@@ -93,19 +93,19 @@
                       <div class="input-field col s8">
                           <div class="col s4">
                             <label>
-                              <input type="checkbox" />
+                              <input type="checkbox" id="male" />
                               <span>Male</span>
                             </label>
                           </div>
                           <div class="col s4">
                           <label>
-                            <input type="checkbox" />
+                            <input type="checkbox" id="female" />
                             <span>Female</span>
                           </label>
                           </div>
                           <div class="col s4">
                           <label>
-                            <input type="checkbox" />
+                            <input type="checkbox" id="other" />
                             <span>Other</span>
                           </label>
                           </div>
@@ -121,7 +121,7 @@
                         <input id="blog_url" type="text" class="validate">
                         <label for="blog_url">Your blog's URL</label>
                       </div>
-                    <button class="btn waves-effect waves-light" type="submit" name="action">Sign Up</button>
+                    <button class="btn waves-effect waves-light" type="submit" name="action" @click="addUser">Sign Up</button>
                     <p>
                       <label>Beta access exclusive to first 1000 users who sign up.</label>
                       <br>
@@ -306,13 +306,50 @@
 </template>
 
 <script>
+import firebase from 'firebase';
+import { usersRef } from '../database.js';
 export default {
   name: "mark",
   data() {
     return {
       brand: "Faxion X Project"
     };
-  }
+  },
+    
+    firebase: {
+            users: usersRef
+    },
+    
+    methods: {
+        addUser(){
+            var firstN = document.getElementById("first_name").value;
+            var emailN = document.getElementById("email").value;
+            var instagram = document.getElementById("instagram").value;
+            var heightFT = document.getElementById("icon_prefix2").value;
+            var heightIN = document.getElementById("icon_prefix3").value;
+            var weightV = document.getElementById("weight_name").value;
+            var ageV = document.getElementById("age").value;
+            var maleY = document.getElementById("male").value;
+            var femaleY = document.getElementById("female").value;
+            var otherY = document.getElementById("other").value;
+            var influencerY = document.getElementById("indeterminate-checkbox").value;
+            var blogURL = document.getElementById("blog_url").value;
+            usersRef.push({
+                firstName: firstN,
+                email: emailN,
+                instagram_handle: instagram,
+                heightFeet: heightFT,
+                heightInches: heightIN,
+                weight: weightV,
+                age: ageV,
+                male: maleY,
+                female:femaleY,
+                other: otherY,
+                influence: influencerY,
+                blogUrl: blogURL
+            });
+        }
+    }
 };
 </script>
 
