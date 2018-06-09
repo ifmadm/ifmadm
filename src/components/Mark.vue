@@ -3,7 +3,7 @@
         <nav>
           <div class="nav-wrapper">
             <a href="/" class="brand-logo">
-              <img src="../assets/img/Logo-with-text.png" alt="Fashion X Project">
+              <img src="../assets/img/Logo_w.png" alt="Fashion X Project">
             </a>
           </div>
         </nav>
@@ -24,7 +24,7 @@
         </section>
         <section id="signup">
           <div class="row">
-            <div class="col m12 l4 signup-sub">
+            <div class="col m12 l6 signup-sub">
               <h3>How it works?</h3>
                 <ul class="collection info-sec">
                   <li class="collection-item avatar">
@@ -134,20 +134,20 @@
         <section class="container-extended deep-orange lighten-3 info">
           <div class="row">
             <div class="col m12 l6">
-              <img class="materialboxed" src="../assets/img/iPhone_X.png" style="width:400;margin: 0 auto;padding:2rem;">
+              <img class="materialboxed" src="../assets/img/iPhone_X-2.png" style="width:400;margin: 0 auto;padding:2rem;">
             </div>
             <div class="col m12 l6 info-int">
-              <h3 style="color:#fff">So, who are we?</h3>
+              <h3 style="color:#fff">About</h3>
               <p class="flow-text"><b>We want you to shop smarter.</b> Style is not one size fits all, so we're putting the power in your hands.</p>
               <p class="flow-text"><b>Join the first inclusive-fashion platform that allows fashion lovers like you to shop &amp; share looks...all based on your body characteristics!</b></p>
-              <p class="flow-text">With your participation and a community of beautiful women from the inside out, it's easier and more fun than ever to envision yourself in that amazing outfit you can’t stop thinking about.</p>
+              <p class="flow-text">It's easier and more fun than ever to envision yourself in that amazing outfit you can’t stop thinking about</p>
             </div>
           </div>
         </section>
         <section id="shopper">
           <div class="row">
             <h1 >Fashion Lovers</h1>
-            <h4 style="font-weight:600">You're unique, Let's celebrate that!</h4>
+            <h4 >You're unique, Let's celebrate that!</h4>
             <div class="col s12">
                 <div class="col s12">
                   <div class="col s1">
@@ -179,52 +179,38 @@
         </section>
         <section class="teal lighten-2 trenders">
           <div class="row">
-          <h1 class="title">Trendsetters</h1>
-          <h4 class="title">Become one and earn money! Anyone can do it.</h4>
-          <div class="col s12 m12 l4">
-            <div class="card">
-              <div class="card-image">
-                <img src="../assets/img/camera-logo.png">
-              </div>
-              <div class="card-content teal lighten-2">
-                <p class="flow-text">Snap your pics</p>
-                <p class="flow-text">Send it to us with size, brand &amp; where you got it <small>(e.g. Macy’s)</small></p>
-                <p class="flow-text">
-                  <small>~ We only share pics from the neck-down. We can crop them for you, no prob!<br>
-                  ~ Any picture background is ok (bedroom, fitting room, etc.)</small>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m12 l4">
-            <div class="card">
-              <div class="card-image">
-                <img src="../assets/img/dollar-sig.png">
-              </div>
-              <div class="card-content teal lighten-2">
-                <p class="flow-text">Earn Money from your pics!</p>
-                <p class="flow-text">After your first 10 pics of the month, you can earn $5 for every 10 pics you send!</p>
-                <p class="flow-text"><a href="#signup">Sign up</a> and you will receive further instructions</p>
-              </div>
-            </div>                                           
-          </div>
-          <div class="col s12 m12 l4">
+          <h1 class="title">Shop, Share<br/> &amp; Earn Money!</h1>
+          <h4 class="title">Anyone can do it.</h4>
+          <div class="col s12 l4 deck">
             <div class="card">
               <div class="card-image">
                 <img src="../assets/img/contract.png">
               </div>
-              <div class="card-content teal lighten-2 ">
-                  <p class="flow-text"><span>1</span>. Sign up</p>
-                  <p class="flow-text"><span>2</span>. <a href="mailto:contact@fashionxproject.com?subject=Trender">Send us</a> your pics
-                    <br>
-                    <small>
-                      ~ They don’t need to be fancy. Just be you!
-                    </small>
-                  </p>
-                  <p class="flow-text"><span>3</span>. We'll email you futher instructions</p>
-                  <p class="flow-text" style="font-weight:700">Get exclusive offers for you early birds!</p>
+              <div class="card-content teal lighten-2 text-center">
+                  <p class="flow-text"><a href="#signup">Sign up</a></p>
               </div>
             </div>
+          </div>
+          <div class="col s12 l4 deck">
+            <div class="card">
+              <div class="card-image">
+                <img src="../assets/img/camera-logo.png">
+              </div>
+              <div class="card-content teal lighten-2 text-center">
+                <p class="flow-text"><a href="mailto:contact@fashionxproject.com?subject=Shop-Share">Share your pics!</a></p>
+                <p>Send them to us with size, brand &amp; shop where you got them (e.g. Macy's)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 l4 deck">
+            <div class="card">
+              <div class="card-image">
+                <img src="../assets/img/dollar-sig.png">
+              </div>
+              <div class="card-content teal lighten-2 text-center">
+                <p class="flow-text">Earn Money from your pics!</p>
+              </div>
+            </div>                                           
           </div>
           </div>
         </section>
@@ -237,15 +223,15 @@
                 <p class="flow-text">Drive more traffic to the content you work hard to create. Share your content with us and we will link it to your blog</p>
                 <p class="flow-text">Care about inclusive fashion? Our shoppers also do. Now they can buy from your content based on their style preferences, body characteristics or personality.</p>
                 <p class="flow-text"><a href="#signup">Sign up</a> &amp; add the link to your blog and <a href="mailto:contact@fashionxproject.com?subject=Influencer "> email us</a> any extra content to share</p>
-                <p class="flow-text">Share <a href="https://twitter.com/search?f=tweets&q=fashion&src=typd" target="_blank">@fashionXproject</a> with your followers and use #fashionXproject in your content to empower the movement!</p>
+                <p class="flow-text">Share <a href="https://www.instagram.com/fashionXproject" target="_blank">@fashionXproject</a> with your followers and use <a href="https://www.instagram.com/explore/tags/fashionxproject/" target="_blank">#fashionXproject</a> in your content to empower the movement!</p>
               </div>
             </div>
           </div>
         </section>
         <section id="retailer" style="background-color:#f8f8f8">
           <div class="container row">
-          <h1 class="title">Retailers <br/>
-            <small>Partner with us first.</small></h1>
+          <h1 class="title">Retailers </h1>
+          <h4>Partner with us first.</h4>
           <div class="col m12 l4">
             <div class="card">
               
@@ -283,14 +269,14 @@
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Do you like Donuts?</h5>
-                <p class="grey-text text-lighten-4">We do. Everybody does! And as you ramble on through life, whatever be your goal keep your eye on the donut and not on the hole.</p>
+                <h5 class="white-text">+ I N C L U S I V E  F A S H I O N</h5>
+                <p class="grey-text text-lighten-4">If all girls were taught how to love each other fiercely instead of how to compete with each other and hate their own bodies, what a different and beautiful world we would live in.<br/> -Nikita Gill.</p>
               </div>
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Connect</h5>
-                <a class="grey-text text-lighten-3" href="#!" target="_blank"><img src="../assets/img/instagram_logo.png" title="Instagram" alt="Instagram"> </a>
-                <a class="grey-text text-lighten-3" href="#!" target="_blank"><img src="../assets/img/pinterest_logo.png" title="Twitter" alt="Twitter"></a>
-                <a class="grey-text text-lighten-3" href="#!" target="_blank"><img src="../assets/img/facebook_logo.png" title="Facebook" alt="Facebook"></a>
+                <a class="grey-text text-lighten-3" href="https://www.instagram.com/fashionXproject" target="_blank"><img src="../assets/img/instagram_logo.png" title="Instagram" alt="Instagram"> </a>
+                <a class="grey-text text-lighten-3" href="https://www.pinterest.com/fashionxproject/" target="_blank"><img src="../assets/img/pinterest_logo.png" title="Pinterest" alt="Pinterest"></a>
+                <a class="grey-text text-lighten-3" href="https://www.facebook.com/FashionXproject-480923032326129/" target="_blank"><img src="../assets/img/facebook_logo.png" title="Facebook" alt="Facebook"></a>
               </div>
             </div>
           </div>
@@ -306,7 +292,7 @@
 </template>
 
 <script>
-import firebase from 'firebase';
+    import firebase from 'firebase';
 import { usersRef } from '../database.js';
 export default {
   name: "mark",
@@ -391,15 +377,16 @@ nav .brand-logo {
 
 #hero {
   text-align: center;
+  margin-top: 3rem;
 }
 #hero h4 {
-  padding: 2rem 0;
+  padding: 0.5rem 0 0.8rem;
   letter-spacing: 2.5px;
   line-height: 1.5;
 }
 
 .hero-center {
-  background-color: rgba(244, 143, 177, 0.6);
+  background: rgba(244, 143, 177, 0.6) url(../assets/img/hero-img-2.png) center/cover no-repeat;
 }
 .hero-center {
   padding: 15rem 0;
@@ -505,7 +492,7 @@ nav .brand-logo {
 }
 .info-sec h5 {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-left: 2rem;
 }
 .info p {
@@ -566,14 +553,14 @@ nav .brand-logo {
 .trenders .card {
   background-color: transparent;
   box-shadow: none;
-  padding: 4rem;
+  padding: 1rem 4rem;
 }
 .trenders .card-image img {
-  width: 16rem;
+  width: 12rem;
   margin: 10px auto;
 }
 .trenders .card .card-content {
-  padding: 5rem 3rem;
+  padding: 2.5rem;
   background-color: #f8f8f8;
   box-shadow: 0 68px 54px rgba(0, 0, 0, 0.3), 0 36px 35px rgba(0, 0, 0, 0.22);
 }
@@ -598,7 +585,7 @@ nav .brand-logo {
 
 /* Influencers */
 #influencers {
-  padding: 12rem 0;
+  padding: 3rem 0 12rem;
 }
 #influencers {
   background: url(../assets/img/influencers_background.png) center/cover no-repeat;
@@ -668,8 +655,11 @@ footer a {
 
 /* General */
 h1 {
-  font-size: 6.2rem;
+  font-size: 4rem;
   line-height: 1.3;
+}
+h4 {
+  font-size: 2rem;
 }
 .text-center {
   text-align: center;
@@ -698,8 +688,14 @@ h1 {
   
 }
 @media only screen and (max-width: 900px){
+  .signform {
+    padding: 0 3rem 3rem;
+  }
   #signup form {
     padding: 3rem;
+  }
+  #shopper {
+    background: #ffffff;
   }
 }
 @media only screen and (max-width:768px) {
@@ -725,6 +721,9 @@ h1 {
     padding: 4rem;
     background: #ffffff;
   }
+  #shopper img.circle {
+    width: 28px;
+  }
   .trenders h1,
   #shopper h1,
   #influencers h1,
@@ -740,9 +739,11 @@ h1 {
   .img-full {
     width: 346px;
   }
+  .deck {
+    margin-bottom: 4rem;
+  }
 }
 @media only screen and (max-width:500px) {
-  /* #app {width: 110% !important} */
   #signup {
     padding: 2rem;
   }
