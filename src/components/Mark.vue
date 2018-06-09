@@ -762,7 +762,7 @@ h4 {
     
 @media only screen and (max-width:900px) {
 #shopper {
-  background:#ffffff !important;
+  background:none;
 }
 #shopper a {
 font-size:3rem;
