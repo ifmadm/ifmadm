@@ -752,13 +752,6 @@ h4 {
   }
 }
     
-@media only screen and (min-width: 960px) {
-.flow-text,
- .info-sec h5 {
-   font-size: 2.68rem;
- }
-}
-    
 @media only screen and (max-width:1200px) {
 .trenders .card {
  padding:1rem;
@@ -769,7 +762,7 @@ h4 {
     
 @media only screen and (max-width:900px) {
 #shopper {
-  background:#ffffff;
+  background:#ffffff !important;
 }
 #shopper a {
 font-size:3rem;
