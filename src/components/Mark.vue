@@ -269,7 +269,7 @@
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">+ I N C L U S I V E  F A S H I O N</h5>
+                <h5 class="white-text">+ I N C L U S I V E    F A S H I O N</h5>
                 <p class="grey-text text-lighten-4">If all girls were taught how to love each other fiercely instead of how to compete with each other and hate their own bodies, what a different and beautiful world we would live in.<br/> -Nikita Gill.</p>
               </div>
               <div class="col l4 offset-l2 s12">
@@ -763,15 +763,6 @@ h4 {
 @media only screen and (max-width:900px) {
 #shopper {
   background:#ffffff !important;
-}
-#shopper a {
-font-size:3rem;
-}
-    }
-    
-@media only screen and (max-width:600px) {
-#shopper {
-  background: none;
 }
 #shopper a {
 font-size:3rem;
