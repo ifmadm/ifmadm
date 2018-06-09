@@ -335,6 +335,7 @@ export default {
                 influencer: influencerY,
                 blogUrl: blogURL
             });
+            alert("Thanks for signing up!");
         },
         influencerChange(){
             if(this.influencer == false){
