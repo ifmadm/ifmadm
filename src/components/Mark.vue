@@ -762,7 +762,16 @@ h4 {
     
 @media only screen and (max-width:900px) {
 #shopper {
-  background:none;
+  background:#ffffff !important;
+}
+#shopper a {
+font-size:3rem;
+}
+    }
+    
+@media only screen and (max-width:600px) {
+#shopper {
+  background: none;
 }
 #shopper a {
 font-size:3rem;
