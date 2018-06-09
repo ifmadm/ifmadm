@@ -45,17 +45,17 @@
                   </li>
                 </ul>
             </div>
-            <div class="col m12 l8 signform">
+            <div class="col m12 l6 signform">
                   <form class="z-depth-5">
                     <div class="signup-call">
                         <span>Sign Up Now</span>
                     </div>
                     <div class="row">
-                      <div class="input-field col s6">
+                      <div class="input-field col s12 m6">
                         <input id="first_name" type="text" class="validate">
                         <label for="first_name">First Name</label>
                       </div>
-                      <div class="input-field col s6">
+                      <div class="input-field col s12 m6">
                         <input id="email" type="text" class="validate">
                         <label for="email">Email</label>
                       </div>
@@ -70,17 +70,17 @@
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col s6">
-                        <div class="input-field col s6">
+                      <div class="col s12 m6">
+                        <div class="input-field col s12 m6">
                           <textarea id="icon_prefix2" class="materialize-textarea" placeholder="ft"></textarea>
                           <label for="icon_prefix2">Height</label>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col s12 m6">
                           <textarea id="icon_prefix3" class="materialize-textarea" placeholder="in"></textarea>
                         </div>
                         
                       </div>
-                      <div class="input-field col s6">
+                      <div class="input-field col s12 m6">
                         <input id="weight_name" type="text" class="validate">
                         <label for="weight_name">Weight (lbs)</label>
                       </div>
@@ -117,7 +117,7 @@
                         <span>Are you an Influencer?</span>
                       </label>
                     </p>
-                      <div class="input-field col s12">
+                      <div class="input-field col s12 m6">
                         <input id="blog_url" type="text" class="validate" v-show="influencer">
                         <label for="blog_url">Your blog's URL</label>
                       </div>
@@ -647,7 +647,7 @@ nav .brand-logo {
 /* Footer */
 
 footer img {
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 footer a {
   color: #001200;
@@ -665,7 +665,7 @@ h4 {
   text-align: center;
 }
 .img-full {
-  width: 346px;
+  width: 100%;
 }
 
 /* Media Query */
@@ -751,4 +751,28 @@ h4 {
     padding: 5rem 1rem;
   }
 }
+    
+@media only screen and (min-width: 960px) {
+.flow-text,
+ .info-sec h5 {
+   font-size: 2.68rem;
+ }
+}
+    
+@media only screen and (max-width:1200px) {
+.trenders .card {
+ padding:1rem;
+ }
+#retailer .card .card-content {
+ padding:1.5rem; }
+}
+    
+@media only screen and (max-width:900px) {
+#shopper {
+  background:#ffffff;
+}
+#shopper a {
+font-size:3rem;
+}
+    }
 </style>
