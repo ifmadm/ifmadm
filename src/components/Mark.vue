@@ -134,7 +134,7 @@
         <section class="container-extended deep-orange lighten-3 info">
           <div class="row">
             <div class="col m12 l6">
-              <img class="materialboxed" src="../assets/img/iPhone_X-2.png" style="width:400;margin: 0 auto;padding:2rem;">
+              <img class="materialboxed" src="../assets/img/iPhone_X.png" style="width:400;margin: 0 auto;padding:2rem;">
             </div>
             <div class="col m12 l6 info-int">
               <h3 style="color:#fff">About</h3>
