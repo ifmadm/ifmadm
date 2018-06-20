@@ -59,7 +59,7 @@
                         <input placeholder="my@email.com" id="email" type="email" class="validate">
                         <label class="active" for="email">Email</label>
                       </div>
-                      <button class="btn waves-effect waves-light" type="submit" name="action" @click="" style="margin-bottom:1rem;max-width:260px">Sign Up</button>
+                      <button class="btn waves-effect waves-light" type="submit" name="action" @click="AddUser" style="margin-bottom:1rem;max-width:260px">Sign Up</button>
                     </div>
                     <p class="grey-text">Beta access exclusive to first 1000 users who sign up.<br/>Fashion X Project for men launching December 2018.</p>
                   </form>
@@ -123,7 +123,7 @@
                 <img src="../assets/img/contract.png">
               </div>
               <div class="card-content teal lighten-2 text-center">
-                  <p class="flow-text"><a href="#signform" id="signup" @click="AddUser">Sign up</a></p>
+                  <p class="flow-text"><a href="#signform">Sign up</a></p>
               </div>
             </div>
           </div>
@@ -247,7 +247,7 @@ export default {
     
     methods: {
         addUser(){
-            var emailN = document.getElementById("signup").value;
+            var emailN = document.getElementById("email").value;
             signupRef.push({
                 email: emailN
             });
