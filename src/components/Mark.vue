@@ -123,7 +123,7 @@
                 <img src="../assets/img/contract.png">
               </div>
               <div class="card-content teal lighten-2 text-center">
-                  <p class="flow-text"><a href="#signform">Sign up</a></p>
+                  <p class="flow-text"><a href="#signform" id="signup" @click="AddUser">Sign up</a></p>
               </div>
             </div>
           </div>
@@ -227,8 +227,10 @@
 </template>
 
 <script>
-    import firebase from 'firebase';
+import firebase from 'firebase';
 import { usersRef } from '../database.js';
+import { signupRef } from '../database.js';
+    
 export default {
   name: "mark",
   data() {
@@ -239,52 +241,17 @@ export default {
   },
     
     firebase: {
-            users: usersRef
+            users: usersRef,
+            signups: signupRef
     },
     
     methods: {
         addUser(){
-            var firstN = document.getElementById("first_name").value;
-            var emailN = document.getElementById("email").value;
-            var instagram = document.getElementById("instagram").value;
-            var heightFT = document.getElementById("icon_prefix2").value;
-            var heightIN = document.getElementById("icon_prefix3").value;
-            var weightV = document.getElementById("weight_name").value;
-            var ageV = document.getElementById("age").value;
-            var maleY = document.getElementById("male").checked;
-            var femaleY = document.getElementById("female").checked;
-            var otherY = document.getElementById("other").checked;
-            var influencerY = document.getElementById("indeterminate-checkbox").checked;
-            var blogURL = document.getElementById("blog_url").value;
-            usersRef.push({
-                firstName: firstN,
-                email: emailN,
-                instagram_handle: instagram,
-                heightFeet: heightFT,
-                heightInches: heightIN,
-                weight: weightV,
-                age: ageV,
-                male: maleY,
-                female:femaleY,
-                other: otherY,
-                influencer: influencerY,
-                blogUrl: blogURL
+            var emailN = document.getElementById("signup").value;
+            signupRef.push({
+                email: emailN
             });
             alert("Thanks for signing up!");
-        },
-        influencerChange(){
-            if(this.influencer == false){
-                this.influencer = true;
-            }
-            else{
-                this.influencer = false;
-            }
-        },
-        ageRestricted(){
-            if(document.getElementById("age").value<18){
-                alert("You have to be at least 18 years of age to sign up");
-                document.getElementById("age").value = "";
-            }
         }
     }
 };
