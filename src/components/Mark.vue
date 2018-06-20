@@ -153,7 +153,11 @@
         <section class="container-extended deep-orange lighten-3 info">
           <div class="row">
             <div class="col m12 l6">
+<<<<<<< HEAD
               <img class="materialboxed" src="../assets/img/iPhone_X.png">
+=======
+              <img class="materialboxed" src="../assets/img/iPhone_X.png" style="width:400;margin: 0 auto;padding:2rem;">
+>>>>>>> 90eb733c2d58ba154a2875fafc6372df347e4470
             </div>
             <div class="col m12 l6 info-int">
               <h3 style="color:#fff">About</h3>
