@@ -59,7 +59,7 @@
                         <input placeholder="my@email.com" id="email" type="email" class="validate">
                         <label class="active" for="email">Email</label>
                       </div>
-                      <button class="btn waves-effect waves-light" type="submit" name="action" @click="AddUser" style="margin-bottom:1rem;max-width:260px">Sign Up</button>
+                      <button class="btn waves-effect waves-light" type="submit" @click="addUser" style="margin-bottom:1rem;max-width:260px">Sign Up</button>
                     </div>
                     <p class="grey-text">Beta access exclusive to first 1000 users who sign up.<br/>Fashion X Project for men launching December 2018.</p>
                   </form>
