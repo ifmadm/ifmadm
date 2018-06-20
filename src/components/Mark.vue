@@ -235,8 +235,7 @@ export default {
   name: "mark",
   data() {
     return {
-      brand: "Faxion X Project",
-        influencer: false
+      brand: "Fashion X Project"
     };
   },
     
@@ -251,7 +250,7 @@ export default {
             signupRef.push({
                 email: emailN
             });
-            alert("Thanks for signing up!");
+            alert("Thanks for signing up with " + emailN + " !");
         }
     }
 };
