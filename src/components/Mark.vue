@@ -64,100 +64,13 @@
                     <p class="grey-text">Beta access exclusive to first 1000 users who sign up.<br/>Fashion X Project for men launching December 2018.</p>
                   </form>
                 </div>
-              
-                  <!-- <form class="z-depth-5">
-                    <div class="signup-call">
-                        <span>Sign Up Now</span>
-                    </div>
-                    <div class="row">
-                      <div class="input-field col s12 m6">
-                        <input id="first_name" type="text" class="validate">
-                        <label for="first_name">First Name</label>
-                      </div>
-                      <div class="input-field col s12 m6">
-                        <input id="email" type="text" class="validate">
-                        <label for="email">Email</label>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col s12">
-                        <div class="input-field">
-                          <input id="instagram" type="text" class="validate">
-                          <label for="instagram">Instagram Handle (ID)</label>
-                          < !- - <span class="helper-text" data-error="wrong" data-success="right">Instagram Handle (ID)</span> - ->
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col s12 m6">
-                        <div class="input-field col s12 m6">
-                          <textarea id="icon_prefix2" class="materialize-textarea" placeholder="ft"></textarea>
-                          <label for="icon_prefix2">Height</label>
-                        </div>
-                        <div class="input-field col s12 m6">
-                          <textarea id="icon_prefix3" class="materialize-textarea" placeholder="in"></textarea>
-                        </div>
-                        
-                      </div>
-                      <div class="input-field col s12 m6">
-                        <input id="weight_name" type="text" class="validate">
-                        <label for="weight_name">Weight (lbs)</label>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="input-field col s4">
-                        <input id="age" type="text" @change="ageRestricted">
-                        <label for="age">Age</label>
-                      </div>
-                      <div class="input-field col s8">
-                          <div class="col s4">
-                            <label>
-                              <input type="checkbox" id="male" @click="ageRestricted" />
-                              <span>Male</span>
-                            </label>
-                          </div>
-                          <div class="col s4">
-                          <label>
-                            <input type="checkbox" id="female" />
-                            <span>Female</span>
-                          </label>
-                          </div>
-                          <div class="col s4">
-                          <label>
-                            <input type="checkbox" id="other" />
-                            <span>Other</span>
-                          </label>
-                          </div>
-                      </div>
-                    </div>
-                    <p>
-                      <label>
-                        <input id="indeterminate-checkbox" type="checkbox" @click="influencerChange"/>
-                        <span>Are you an Influencer?</span>
-                      </label>
-                    </p>
-                      <div class="input-field col s12 m6">
-                        <input id="blog_url" type="text" class="validate" v-show="influencer">
-                        <label for="blog_url">Your blog's URL</label>
-                      </div>
-                    <button class="btn waves-effect waves-light" type="submit" name="action" @click="addUser">Sign Up</button>
-                    <p>
-                      <label>Beta access exclusive to first 1000 users who sign up.</label>
-                      <br>
-                      <label>fashionxproject for men launching December 2018.</label>
-                    </p> 
-                  </form>-->
             </div>
           </div>
         </section>
         <section class="container-extended deep-orange lighten-3 info">
           <div class="row">
             <div class="col m12 l6">
-<<<<<<< HEAD
-              <img class="materialboxed" src="../assets/img/iPhone_X.png">
-=======
               <img class="materialboxed" src="../assets/img/iPhone_X.png" style="width:400;margin: 0 auto;padding:2rem;">
->>>>>>> 90eb733c2d58ba154a2875fafc6372df347e4470
             </div>
             <div class="col m12 l6 info-int">
               <h3 style="color:#fff">About</h3>
