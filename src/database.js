@@ -14,7 +14,7 @@ import firebase from 'firebase';
 // global reference to remote database app
 export const db = fbApp.database();
 
-//// global reference to remote storage
-//export const storageRef = fbApp.storage().ref()
+// global reference to remote storage
+export const storageRef = fbApp.storage().ref()
 export const usersRef = db.ref('Users');//creating User storage in firebase
 export const signupRef = db.ref('Sign-Ups');

@@ -10,6 +10,7 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
+    "buttercms": "^1.1.1",
     "firebase": "^5.0.4",
     "jquery": "^3.3.1",
     "vue": "^2.5.16",

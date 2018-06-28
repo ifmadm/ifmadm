@@ -44,7 +44,7 @@
                   <li class="collection-item avatar">
                     <span class="circle btn-floating btn-large deep-orange lighten-3 z-depth-3">4</span>
                     <h5>
-                      <a href="#">Upload your own pictures</a>
+                      <a @click="uploadPictures">Upload your own pictures</a>
                       trying on new clothes and earn money</h5>
                   </li>
                 </ul>
@@ -228,8 +228,7 @@
 
 <script>
 import firebase from 'firebase';
-import { usersRef } from '../database.js';
-import { signupRef } from '../database.js';
+import { signupRef, dataRef, usersRef } from '../database.js';
     
 export default {
   name: "mark",
@@ -251,7 +250,38 @@ export default {
                 email: emailN
             });
             alert("Thanks for signing up with " + emailN + " !");
-        }
+        },
+        // get image selected by user and upload it to Firebase for storage
+        storeUserImage:  function(event) {
+            // get input element user used to select local image
+            var input = document.getElementById('userPictureInput');
+            // have all fields in the form been completed
+            if (input.files.length > 0) {
+                var file = input.files[0];
+                // get reference to a storage location and
+                storageRef.child('images/' + file.name)
+                          .put(file)
+                          .then(snapshot => this.addUserImage(snapshot.downloadURL));
+                // reset input values so user knows to input new data
+                input.value = '';
+            }
+        },
+        //adding the user image
+        addUserImage:  function(url) {
+            var user = firebase.auth().currentUser;
+            user.updateProfile({
+                    photoURL: url
+                    })
+            this.$store.state.userImgUrl = url;
+            
+            for(var i=0;i<this.data.length;i++){
+                if(this.data[i].email===this.currentUser){
+                    var user = this.data[i];
+                    dataRef.child(user['.key']).update({userImgUrl: this.userImage});
+                }
+            }
+            console.log(this.userImage);
+        },
     }
 };
 </script>
